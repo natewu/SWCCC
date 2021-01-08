@@ -8,7 +8,7 @@ class App extends Component{
   render(){
     return(
     <div className="App">
-      <Nav/>
+      <Nav className="App-header"/>
       <Content/>
     </div>
     )  
@@ -16,4 +16,3 @@ class App extends Component{
 }
 
 export default App;
-
