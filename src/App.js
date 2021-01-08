@@ -1,14 +1,13 @@
 import { Component } from 'react';
 import './App.css';
-import titleBar from './components/titlebar';
+import Nav from './components/Nav';
+import React from 'react';
 
 class App extends Component{
   render(){
     return(
     <div className="App">
-      <header className="App-header">
-        <titleBar/>
-      </header>
+      <Nav/>
     </div>
     )  
   }
