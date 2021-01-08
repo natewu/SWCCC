@@ -1,16 +1,20 @@
-import React, { Component } from 'react'
+import React from 'react';
+import {Link} from 'react-router-dom';
 
-class Nav extends Component {
-    render() {
-        return (
-            <div style={{backgroundColor:"#fff", margin:"0"}}>
-                <h1 style={{color:"#000"}}>SWCCC</h1>
-                <div className="About">
-                
-                </div>
+function Nav(){
+    return (
+        <header>
+            <h1 style={{color:"#000"}}>SWCCC</h1>
+            <div className="links">
+                <Link style={linkStyles} to="/">Home</Link> | <Link style={linkStyles} to="/about">About</Link>
             </div>
-        )
-    }
+        </header>
+    )
 }
 
-export default Nav
+const linkStyles = {
+    textDecoration:"none",
+    color:"#000"
+}
+
+export default Nav;
